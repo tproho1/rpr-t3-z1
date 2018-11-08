@@ -4,9 +4,9 @@ public class MedunarodniBroj extends TelefonskiBroj {
         private String drzava;
         private String broj;
 
-    public MedunarodniBroj(String drzava, String broj){
-        this.drzava=drzava;
-        this.broj=broj;
+    public MedunarodniBroj(String drzava1, String broj1){
+        this.drzava=drzava1;
+        this.broj=broj1;
     }
 
     @Override

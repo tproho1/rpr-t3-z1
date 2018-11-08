@@ -1,7 +1,6 @@
 package ba.unsa.etf.rpr.tutorijal03;
 
-import java.util.Map;
-import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Set;
 import static ba.unsa.etf.rpr.tutorijal03.FiksniBroj.Grad;
 
@@ -9,10 +8,10 @@ public class Imenik extends TelefonskiBroj {
         private String ime;
         private TelefonskiBroj broj;
 
-    public void dodaj(String ime, TelefonskiBroj broj){;}
-    public String dajBroj(String ime){return ime;}
+    public void dodaj(String ime1, TelefonskiBroj broj1){this.ime=ime1; this.broj=broj1;}
+    public String dajBroj(String ime1){return ime1;}
     //vraća telefonski broj osobe pod imenom ime u formi stringa pozivajući metodu ispisi() klase TelefonskiBroj,
-    public String dajIme(TelefonskiBroj broj){return ime;}
+    public String dajIme(TelefonskiBroj broj1){return ime;}
     //vraća ime osobe čiji telefonski broj je broj - i ova operacija treba koristiti HashMapu,
     public String naSlovo(char s){return " ";}
     // vraća sve brojeve u telefonskom imeniku za osobe čije ime počinje na slovo s u formatu:
@@ -35,5 +34,11 @@ public class Imenik extends TelefonskiBroj {
     @Override
     public int hashCode() {
         return 0;
+    }
+
+    public Set<String> izGrada(Grad sarajevo) { return new HashSet<String>();
+    }
+
+    public Set<TelefonskiBroj> izGradaBrojevi(Grad sarajevo) { return new HashSet<TelefonskiBroj>();
     }
 }

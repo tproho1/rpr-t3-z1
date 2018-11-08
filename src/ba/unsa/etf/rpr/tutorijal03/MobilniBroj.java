@@ -4,9 +4,9 @@ public class MobilniBroj extends TelefonskiBroj{
     private int mobilnaMreza;
     private String broj;
 
-    public MobilniBroj(int mobilnaMreza, String broj) {
-        this.mobilnaMreza=mobilnaMreza;
-        this.broj=broj;
+    public MobilniBroj(int mobilnaMreza1, String broj1) {
+        this.mobilnaMreza=mobilnaMreza1;
+        this.broj=broj1;
     }
 
     @Override

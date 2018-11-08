@@ -40,8 +40,8 @@ public class FiksniBroj extends TelefonskiBroj {
     }
 
     @Override
-    public String ispisi()
-        return getGrad().getPozivni() + "/" + broj;;
+    public String ispisi(){
+        return getGrad().getPozivni() + "/" + broj;
     }
 
     @Override
